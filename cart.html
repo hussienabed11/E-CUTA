@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: #e3e6f3;">
+  <section id="header">
+    <a href="#"><img src="assect/logo.png" class="logo" alt=""></a>
+
+    <div>
+        <ul id="navbar">
+            <li><a  href="index.html">Home</a></li>
+            <li ><a href="Shop.html">shop</a></li>
+            <li><a href="blog.html">blog</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="contact.html">contact</a></li>
+            <a href="#" id="close"><i class="fas fa-times"></i></a>
+            <li><a class="active" href="cart.html" id="cart-icon"><i class="fa-solid fa-cart-shopping"></i> <span id="cart-count">0</span></a></li>
+        </ul>
+      
+    </div>
+    <div id="moblie">
+      <i id="bar" class="fas fa-outdent"></i>
+      <i class="fa-solid fa-cart-shopping"></i>
+    </div>
+  </section>
+
+
+  <section id="cart-page" class="section-p1" style="padding: 40px;">
+    <h2 style="color: #088178;">Your Cart</h2>
+    <div id="cart-items" class="cart-container"></div>
+    <div class="cart-total" style="margin-top: 20px; border: 1px solid #cce7d0; padding: 20px; background-color: #fff;">
+      <h3 style="color: #088178;">Total: <span id="total-amount">$0</span></h3>
+    </div>
+  </section>
+
+  <script src="cart.js"></script>
+ 
+ 
+</body>
+</html>
